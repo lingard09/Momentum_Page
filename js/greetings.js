@@ -12,12 +12,11 @@ function onLoginSubmit(event) {
   localStorage.setItem(USERNAME_KEY, username);
   paintGreetings(username);
   loginInput.value = "";
-  loginForm.removeAttribute("login-form");
 }
 
 function paintGreetings(username) {
   greeting.classList.remove(HIDDEN_CLASSNAME);
-  greeting.innerText = `Hello, ${username}!`;
+  greeting.innerText = `반가워요, ${username}!`;
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);

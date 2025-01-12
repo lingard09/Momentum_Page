@@ -13,6 +13,7 @@ function onGeoOk(position) {
         weather.innerText = `${data.weather[0].main} / ${data.main.temp}°C`;
     });
 }
+
 function onGeoError(error) {
   alert("Can't find you.");
 }
